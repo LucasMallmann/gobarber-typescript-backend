@@ -4,7 +4,7 @@ import appointmentsRouter from './appointments.routes';
 
 const routes = Router();
 
-routes.use('appointments', appointmentsRouter);
+routes.use('/appointments', appointmentsRouter);
 
 routes.get('/', (req, res) => {
   return res.json('oi');
