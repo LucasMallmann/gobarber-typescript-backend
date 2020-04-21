@@ -4,8 +4,8 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
-  ManyToMany,
   JoinColumn,
+  ManyToOne,
 } from 'typeorm';
 import User from './User';
 
@@ -17,7 +17,7 @@ class Appointment {
   @Column()
   provider_id: string;
 
-  @ManyToMany(() => User)
+  @ManyToOne(() => User)
   @JoinColumn({ name: 'provider_id' })
   provider: User;
 
