@@ -29,3 +29,7 @@ coverage
 
 # Benchmarking
 benchmarks/graphs
+
+# Images upload
+tmp/*
+!tmp/.gitkeep
