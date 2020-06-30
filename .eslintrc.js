@@ -20,6 +20,12 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
+    '@typescript-eslint/interface-name-prefix': [
+      'error',
+      {
+        prefixWithI: 'always',
+      },
+    ],
     'prettier/prettier': 'error',
     'class-methods-use-this': 'off',
     '@typescript-eslint/camelcase': 'off',
