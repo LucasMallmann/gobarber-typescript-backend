@@ -26,6 +26,7 @@ module.exports = {
         prefixWithI: 'always',
       },
     ],
+    'no-useless-constructor': 'off',
     'prettier/prettier': 'error',
     'class-methods-use-this': 'off',
     '@typescript-eslint/camelcase': 'off',
