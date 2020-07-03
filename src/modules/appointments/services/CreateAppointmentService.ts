@@ -9,6 +9,9 @@ interface IRequest {
   provider_id: string;
 }
 
+/**
+ * Service depends upon an interface
+ */
 class CreateAppointmentService {
   constructor(private appointmentsRepository: IAppointmentsRepository) {}
 

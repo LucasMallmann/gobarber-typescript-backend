@@ -14,8 +14,6 @@ const appointmentsRouter = Router();
 
 appointmentsRouter.use(ensureAuthenticated);
 
-const appointmentsRepository = new AppointmentsRepository();
-
 // appointmentsRouter.get('/', async (request, response) => {
 //   const appointments = await appointmentsRepository.find();
 //   return response.json(appointments);
@@ -26,6 +24,7 @@ appointmentsRouter.post('/', async (req, res) => {
 
   const parsedDate = parseISO(date);
 
+  const appointmentsRepository = new AppointmentsRepository();
   const createAppointment = new CreateAppointmentService(
     appointmentsRepository,
   );
