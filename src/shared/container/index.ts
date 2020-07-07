@@ -1,5 +1,10 @@
 import { container } from 'tsyringe';
 
+/**
+ * Register the Providers Injection
+ */
+import '@modules/users/providers';
+
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 import AppointmentsRepository from '@modules/appointments/infra/typeorm/repositories/AppointmentsRepository';
 
