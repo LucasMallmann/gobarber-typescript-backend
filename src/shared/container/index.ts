@@ -3,6 +3,7 @@ import { container } from 'tsyringe';
 /**
  * Register the Providers Injection
  */
+import './providers';
 import '@modules/users/providers';
 
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
