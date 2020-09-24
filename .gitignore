@@ -1,35 +1,6 @@
-
-# OS X
-.DS_Store*
-Icon?
-._*
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Linux
-.directory
-*~
-
-# VsCode
-.vscode
-
-
-# npm
-node_modules
-package-lock.json
-*.log
-*.gz
-
-
-# Coveralls
-coverage
-
-# Benchmarking
-benchmarks/graphs
-
-# Images upload
-tmp/*
-!tmp/.gitkeep
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
