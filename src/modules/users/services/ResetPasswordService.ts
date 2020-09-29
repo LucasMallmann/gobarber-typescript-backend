@@ -39,7 +39,7 @@ class ResetPasswordService {
 
     if (!user) {
       throw new AppError({
-        message: 'User token does not exist',
+        message: 'User does not exist',
       });
     }
 
