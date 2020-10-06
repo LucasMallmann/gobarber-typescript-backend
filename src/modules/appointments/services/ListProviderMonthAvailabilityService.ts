@@ -5,7 +5,7 @@ import IAppointmentsRepository from '@modules/appointments/repositories/IAppoint
 interface IRequest {
   month: number;
   year: number;
-  user_id: string;
+  provider_id: string;
 }
 
 type IResponse = Array<{
@@ -20,8 +20,16 @@ class ListProvidersMonthAvailabilityService {
     private appointmentRepository: IAppointmentsRepository,
   ) {}
 
-  async execute({ user_id }: IRequest): Promise<IResponse> {
-    // const appointments = this.appointmentRepository
+  async execute({ provider_id, month, year }: IRequest): Promise<IResponse> {
+    const appointments = await this.appointmentRepository.findAllInMonthFromProvider(
+      {
+        month,
+        year,
+        provider_id,
+      },
+    );
+
+    console.log(appointments);
 
     return [
       {
