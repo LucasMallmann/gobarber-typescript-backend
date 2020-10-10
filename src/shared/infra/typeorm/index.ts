@@ -1,6 +1,6 @@
-import { createConnection } from 'typeorm';
+import { createConnections } from 'typeorm';
 
 /**
  * Loads the ormconfig.json in the root dir by default
  */
-createConnection();
+createConnections();
