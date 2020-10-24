@@ -18,6 +18,8 @@ import UserTokensRepository from '@modules/users/infra/typeorm/repositories/User
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
 import NotificationsRepository from '@modules/notifications/infra/typeorm/repositories/NotificationsRepository';
 
+import './providers/CacheProvider';
+
 /**
  * The generics are going to ensure that the AppointmentsRepository in the Container implements the Interface methods
  */
